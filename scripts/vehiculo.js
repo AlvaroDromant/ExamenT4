@@ -1,6 +1,6 @@
 import { mostrarResultado } from "./index.js"
 
-class Vehiculo {
+export class Vehiculo {
     #marca
     #modelo
     #color
