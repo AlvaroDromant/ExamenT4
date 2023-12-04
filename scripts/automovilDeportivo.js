@@ -1,7 +1,7 @@
 import { Vehiculo } from "./vehiculo.js";
 import { mostrarResultado } from "./index.js";
 
-class VehiculoDeportivo extends Vehiculo{
+export class VehiculoDeportivo extends Vehiculo{
     #potencia
 
  constructor(marca, modelo, color, fabricacion, cilindrada, potencia){
