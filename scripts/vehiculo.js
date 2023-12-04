@@ -12,16 +12,16 @@ constructor(marca, modelo, color, fabricacion, cilindrada){
     this.#modelo = modelo;
     this.#color = color;
     this.#fabricacion = fabricacion;
-    this.#cilindrada;
+    this.#cilindrada = cilindrada;
 }
 
 mostrarDatos(){
     const datos = `
-    La marca es -> ${marca} <br>
-    El modelo es -> ${modelo} <br>
-    El color es -> ${color} <br>
-    El año de fabricacion es -> ${fabricacion} <br>
-    La cilindrada es -> ${cilindrada}
+    La marca es -> ${this.#marca} <br>
+    El modelo es -> ${this.#modelo} <br>
+    El color es -> ${this.#color} <br>
+    El año de fabricacion es -> ${this.#fabricacion} <br>
+    La cilindrada es -> ${this.#cilindrada}
     `;
 
     mostrarResultado(`<p>${datos}</p>`)
@@ -33,13 +33,13 @@ acelerar(velocidad){
 }
 
 arrancar(){
-    const mensaje = `El coche de marca ${marca} y modelo ${modelo} ha arrancado`;
+    const mensaje = `El coche de marca ${this.#marca} y modelo ${this.#modelo} ha arrancado`;
     mostrarResultado(`<p>${mensaje}</p>`);
 
 }
 
 frenar(){
-    const mensaje = `El coche de marca ${marca} y modelo ${modelo} ha frenado`;
+    const mensaje = `El coche de marca ${this.#marca} y modelo ${this.#modelo} ha frenado`;
     mostrarResultado(`<p>${mensaje}</p>`);
 }
 

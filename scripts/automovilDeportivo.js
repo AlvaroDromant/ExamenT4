@@ -11,9 +11,9 @@ export class VehiculoDeportivo extends Vehiculo{
 
 mostrarDatos(){
 
-   super.mostrarDatos()
+   super.mostrarDatos();
 
-   const mensajeDeportivo = `La potencia del motor este superdeportivo es de ${potencia}`;
+   const mensajeDeportivo = `La potencia del motor de este superdeportivo es de ${this.#potencia}`;
    mostrarResultado (`<p>${mensajeDeportivo}</p>`);
 
 }
