@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'letra';
+    src: url(/assets/Poppins-LightItalic.ttf);
+}
+
+
+
+body{
+background-image: url(/assets/nano.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+h1{
+    position: absolute;
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(73, 72, 72);
+    font-family: letra;
+}
+
+.degradado {
+    border: 1px;
+    box-shadow: 5px 5px 5px 5px black;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+p{
+    color: rgb(15, 147, 212);
+}
+
+
+
+  
+
