@@ -23,11 +23,11 @@ deportivo1.acelerar(140);
 deportivo1.frenar;
 
 const vehiculoObject = {
-  marca: 'BMW',
-  modelo: 'CLK',
-  color: 'rojo',
-  fabricacion: 1992,
-  cilindrada: '2400'
+  marca: vehiculo1.marca,
+  modelo: vehiculo1.modelo,
+  color: vehiculo1.color,
+  fabricacion: vehiculo1.fabricacion,
+  cilindrada: vehiculo1.cilindrada
 };
 
 localStorage.setItem('Vehiculo1', JSON.stringify(vehiculoObject));
@@ -35,13 +35,21 @@ console.log(JSON.parse(localStorage.getItem('Vehiculo1')));
 
 
 const deportivoObject ={
-    marca: 'Ferrari',
-    modelo: 'Spider',
-    color: 'Amarillo',
-    fabricacion: 2020,
-    cilindrada: '4000',
-    potencia: '500'
+    marca: deportivo1.marca,
+    modelo: deportivo1.modelo,
+    color: deportivo1.color,
+    fabricacion: deportivo1.fabricacion,
+    cilindrada: deportivo1.cilindrada,
+    potencia: deportivo1.potencia
 };
+
+for(let key in deportivoObject){
+    if(deportivoObject.hasOwnProperty(key)){
+        localStorage(key, deportivoObject[key])
+    }
+}
+
+localStorage.removeItem('color');
 
 localStorage.clear();
 

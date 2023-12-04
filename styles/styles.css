@@ -3,8 +3,6 @@
     src: url(/assets/Poppins-LightItalic.ttf);
 }
 
-
-
 body{
 background-image: url(/assets/nano.jpg);
 background-size: cover;
@@ -22,11 +20,16 @@ h1{
 .degradado {
     border: 1px;
     box-shadow: 5px 5px 5px 5px black;
-    width: 300px;
+    width: 400px;
     height: 150px;
-    text-align: center;
-    padding: 10px;
-    
+    padding: auto;
+    padding-left: 30px; 
+    background: linear-gradient(white, rgb(4, 228, 224));
+}
+
+/* Este Pseudoselector lo que hace es que cuando te posas sobre el titulo cambia de color */
+.degradado :hover{
+    color: blue;
 }
 
 p{
