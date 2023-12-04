@@ -9,14 +9,14 @@ export function mostrarResultado(mensaje){
 }
 
 const vehiculo1 = new Vehiculo ('BMW', 'CLK', 'rojo', 1992, '2400');
-mostrarResultado('--Vehiculo 1--');
+mostrarResultado('<h3>Vehiculo 1<h3>');
 vehiculo1.mostrarDatos();
 vehiculo1.arrancar();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
 
 const deportivo1 = new VehiculoDeportivo ('Ferrari', 'Spider', 'Amarillo', 2020, '4000', '500');
-mostrarResultado('--Deportivo 1--');
+mostrarResultado('<h3>Deportivo 1<h3>');
 deportivo1.mostrarDatos();
 deportivo1.arrancar();
 deportivo1.acelerar(140);

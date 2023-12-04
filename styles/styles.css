@@ -25,6 +25,7 @@ h1{
     padding: auto;
     padding-left: 30px; 
     background: linear-gradient(white, rgb(4, 228, 224));
+    border-radius: 10px;
 }
 
 /* Este Pseudoselector lo que hace es que cuando te posas sobre el titulo cambia de color */
@@ -34,6 +35,23 @@ h1{
 
 p{
     color: rgb(15, 147, 212);
+}
+
+@keyframes moverImagen {
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(1000%);
+    }
+}
+ 
+#imagenMov{
+    width: 300px;
+    height: 250px;
+    background-image: url('/assets/coches.png');
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
 }
 
 
